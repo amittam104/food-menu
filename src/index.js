@@ -77,11 +77,17 @@ function Menu() {
       <h2>Our Menu</h2>
 
       {pizzasLength > 0 ? (
-        <ul className="pizzas">
-          {pizzas.map((pizza) => (
-            <Pizza PizzaObj={pizza} key={pizza.name} />
-          ))}
-        </ul>
+        <>
+          <p>
+            Autentic Italian Cuisine. 6 creative dishes to choose from. All from
+            our stone oven, Organic and delicious
+          </p>
+          <ul className="pizzas">
+            {pizzas.map((pizza) => (
+              <Pizza PizzaObj={pizza} key={pizza.name} />
+            ))}
+          </ul>
+        </>
       ) : (
         <p>We are still working on our menu. Please come back later.</p>
       )}
